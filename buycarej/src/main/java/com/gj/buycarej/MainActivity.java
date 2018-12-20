@@ -24,6 +24,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements IView {
 
+
     private ExpandableListView elv;
     ArrayList<GsonBean.DataBean> dataBeen = new ArrayList<>();
     private CheckBox checkquan;
