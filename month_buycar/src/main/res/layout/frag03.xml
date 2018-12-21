@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--点餐系统-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/left_recycler"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/grayblack"></android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/right_recycler"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/shop_car_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/gouwuc_r"/>
+
+        <TextView
+            android:id="@+id/goods_number"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginLeft="-10dp"
+            android:background="@drawable/circle_red_bg"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/shop_car_image"
+            android:text="6"/>
+
+        <TextView
+            android:id="@+id/goods_sum_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="价格：￥1000"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

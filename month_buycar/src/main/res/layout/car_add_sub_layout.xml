@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--加减框-->
+    <TextView
+        android:id="@+id/btn_add"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/car_btn_bg"
+        android:focusable="false"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="+"/>
+
+    <TextView
+        android:id="@+id/text_number"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:text="10" />
+
+    <TextView
+        android:id="@+id/btn_sub"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textSize="16sp"
+        android:focusable="false"
+        android:gravity="center"
+        android:background="@drawable/car_btn_bg"
+        android:text="-" />
+
+</LinearLayout>
